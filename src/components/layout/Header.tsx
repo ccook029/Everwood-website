@@ -18,7 +18,7 @@ const collections = [
 const navLinks = [
   { name: "Shop", href: "/shop" },
   { name: "Collections", href: "/collections", dropdown: collections },
-  { name: "Buying Guide", href: "/buying-guide" },
+  { name: "Buying Guide", href: "/guide" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];

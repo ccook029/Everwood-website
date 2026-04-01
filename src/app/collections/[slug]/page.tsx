@@ -168,7 +168,7 @@ export default function CollectionPage({ params }: Props) {
               and sizing to electrical requirements and assembly.
             </p>
             <Link
-              href="/buying-guide"
+              href="/guide"
               className="mt-6 inline-block rounded-lg bg-cedar px-8 py-3 text-sm font-semibold text-white hover:bg-cedar/90 transition-colors"
             >
               Read the Buying Guide

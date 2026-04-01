@@ -212,7 +212,7 @@ export default function CartPageContent() {
                   Please verify your electrical setup before ordering. Some models
                   require a dedicated 240V circuit.{" "}
                   <Link
-                    href="/buying-guide"
+                    href="/guide"
                     className="underline font-medium hover:text-amber-900"
                   >
                     Learn more
