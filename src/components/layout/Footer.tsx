@@ -16,14 +16,15 @@ const companyLinks = [
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
   { name: "FAQ", href: "/faq" },
+  { name: "Buying Guide", href: "/guide" },
 ];
 
 const supportLinks = [
-  { name: "Shipping", href: "/shipping" },
-  { name: "Returns", href: "/returns" },
-  { name: "Warranty", href: "/warranty" },
-  { name: "Privacy Policy", href: "/privacy" },
-  { name: "Terms of Service", href: "/terms" },
+  { name: "Shipping", href: "/policies/shipping" },
+  { name: "Returns", href: "/policies/returns" },
+  { name: "Warranty", href: "/policies/warranty" },
+  { name: "Privacy Policy", href: "/policies/privacy" },
+  { name: "Terms of Service", href: "/policies/terms" },
 ];
 
 function FooterColumn({
