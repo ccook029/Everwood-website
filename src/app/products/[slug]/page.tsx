@@ -8,6 +8,7 @@ import ProductCard from "../../../components/ui/ProductCard";
 import ProductTabs from "./ProductTabs";
 import ImageGallery from "./ImageGallery";
 import AddToCartButton from "../../../components/cart/AddToCartButton";
+import JsonLd from "../../../components/ui/JsonLd";
 
 interface Props {
   params: { slug: string };
@@ -20,9 +21,15 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const product = getProductBySlug(params.slug);
   if (!product) return { title: "Product Not Found" };
+  const desc = `${product.shortDescription} ${formatPrice(product.price)} with free shipping across North America.`;
   return {
-    title: `${product.name} — ${product.collection} | Everwood Sauna`,
-    description: product.shortDescription,
+    title: `${product.name} — ${product.capacity} ${product.collection.replace(" Series", "")} Sauna`,
+    description: desc,
+    openGraph: {
+      title: `${product.name} | Everwood Sauna`,
+      description: desc,
+      type: "website",
+    },
   };
 }
 
@@ -48,8 +55,43 @@ export default function ProductPage({ params }: Props) {
   );
   const related = [...sameCollection, ...otherProducts].slice(0, 4);
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.shortDescription,
+    brand: { "@type": "Brand", name: "Everwood Sauna" },
+    offers: {
+      "@type": "Offer",
+      price: product.price.toFixed(2),
+      priceCurrency: "CAD",
+      availability:
+        product.stockStatus === "in-stock"
+          ? "https://schema.org/InStock"
+          : product.stockStatus === "pre-order"
+            ? "https://schema.org/PreOrder"
+            : "https://schema.org/OutOfStock",
+      url: `https://everwoodsauna.com/products/${product.slug}`,
+      seller: { "@type": "Organization", name: "Everwood Sauna" },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "CAD" },
+        shippingDestination: [
+          { "@type": "DefinedRegion", addressCountry: "CA" },
+          { "@type": "DefinedRegion", addressCountry: "US" },
+        ],
+      },
+    },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Capacity", value: product.capacity },
+      { "@type": "PropertyValue", name: "Heater Type", value: product.heaterType },
+      { "@type": "PropertyValue", name: "Power", value: product.power },
+    ],
+  };
+
   return (
     <div className="bg-cream min-h-screen">
+      <JsonLd data={productSchema} />
       {/* Breadcrumb */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
         <nav className="flex items-center gap-2 text-sm text-charcoal/50">

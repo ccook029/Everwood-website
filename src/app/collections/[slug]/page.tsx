@@ -18,9 +18,15 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const collection = getCollectionBySlug(params.slug);
   if (!collection) return { title: "Collection Not Found" };
+  const desc = `Explore the Everwood ${collection.name}. ${collection.tagline} saunas for your home. Starting from ${formatPrice(collection.startingPrice)}.`;
   return {
-    title: `${collection.name} — ${collection.tagline} | Everwood Sauna`,
-    description: collection.description.split("\n")[0],
+    title: `${collection.name} — ${collection.tagline} Saunas`,
+    description: desc,
+    openGraph: {
+      title: `${collection.name} — ${collection.tagline} Saunas | Everwood Sauna`,
+      description: desc,
+      type: "website",
+    },
   };
 }
 

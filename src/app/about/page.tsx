@@ -4,9 +4,9 @@ import PageHero from "../../components/ui/PageHero";
 import FadeInUp from "../../components/ui/FadeInUp";
 
 export const metadata: Metadata = {
-  title: "Our Story | Everwood Sauna",
+  title: "About Everwood Sauna — Our Story",
   description:
-    "Everwood Sauna was built on a simple idea: premium home saunas shouldn't cost a fortune. Learn how we cut out the middlemen to bring you quality saunas at honest prices.",
+    "Premium saunas without the premium markup. Learn how Everwood delivers quality craftsmanship directly to your door across Canada and the USA.",
 };
 
 const values = [

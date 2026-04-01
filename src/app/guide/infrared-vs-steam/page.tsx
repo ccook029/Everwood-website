@@ -4,8 +4,9 @@ import FadeInUp from "@/components/ui/FadeInUp";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title:
-    "Infrared Sauna vs Steam Sauna: Which Is Right for You? | Everwood Sauna",
+  title: "Infrared Sauna vs Steam Sauna: Which Is Right for You?",
+  description:
+    "A complete comparison of infrared and traditional steam saunas. Learn the differences in heat, health benefits, cost, and installation.",
 };
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
