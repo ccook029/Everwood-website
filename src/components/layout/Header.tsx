@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ShoppingBag, Menu, X, ChevronDown } from "lucide-react";
 import Logo from "../ui/Logo";
+import { useCart } from "../../context/CartContext";
 
 const collections = [
   { name: "Solace Series", href: "/collections/solace-series" },
@@ -23,6 +24,7 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const { cartCount, openDrawer } = useCart();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -101,12 +103,14 @@ export default function Header() {
 
           <div className="flex items-center gap-4">
             {/* Cart */}
-            <Link href="/cart" className="relative">
+            <button onClick={openDrawer} className="relative" aria-label="Open cart">
               <ShoppingBag className="h-5 w-5 text-charcoal" />
-              <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-cedar text-[10px] font-bold text-white">
-                0
-              </span>
-            </Link>
+              {cartCount > 0 && (
+                <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-cedar text-[10px] font-bold text-white">
+                  {cartCount > 9 ? "9+" : cartCount}
+                </span>
+              )}
+            </button>
 
             {/* Mobile hamburger */}
             <button

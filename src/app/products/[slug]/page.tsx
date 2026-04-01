@@ -7,6 +7,7 @@ import FadeInUp from "../../../components/ui/FadeInUp";
 import ProductCard from "../../../components/ui/ProductCard";
 import ProductTabs from "./ProductTabs";
 import ImageGallery from "./ImageGallery";
+import AddToCartButton from "../../../components/cart/AddToCartButton";
 
 interface Props {
   params: { slug: string };
@@ -115,9 +116,15 @@ export default function ProductPage({ params }: Props) {
               </div>
 
               {/* Add to Cart */}
-              <button className="mt-6 w-full rounded-lg bg-cedar py-4 text-base font-semibold text-white hover:bg-cedar/90 transition-colors">
-                Add to Cart
-              </button>
+              <AddToCartButton
+                slug={product.slug}
+                name={product.name}
+                price={product.price}
+                compareAtPrice={product.compareAtPrice}
+                collection={product.collection}
+                capacity={product.capacity}
+                className="mt-6 w-full"
+              />
 
               {/* Trust Badges */}
               <div className="mt-6 grid grid-cols-3 gap-4 text-center">

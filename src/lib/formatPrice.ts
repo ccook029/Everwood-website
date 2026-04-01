@@ -1,8 +1,8 @@
-export function formatPrice(cents: number): string {
+export function formatPrice(amount: number): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "USD",
+    currency: "CAD",
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
-  }).format(cents);
+  }).format(amount) + " CAD";
 }
