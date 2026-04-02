@@ -3,42 +3,42 @@
     "slug": "solace-series",
     "name": "Solace Series",
     "description": "Full Spectrum Infrared",
-    "startingPrice": 2499,
+    "startingPrice": 2799,
     "image": "/images/collections/solace.jpg"
   },
   {
     "slug": "glow-series",
     "name": "Glow Series",
     "description": "Carbon Panel Infrared",
-    "startingPrice": 2799,
+    "startingPrice": 2999,
     "image": "/images/collections/glow.jpg"
   },
   {
     "slug": "summit-series",
     "name": "Summit Series",
     "description": "Traditional Steam",
-    "startingPrice": 3499,
+    "startingPrice": 3999,
     "image": "/images/collections/summit.jpg"
   },
   {
     "slug": "timberline-series",
     "name": "Timberline Series",
     "description": "Barrel Saunas",
-    "startingPrice": 4499,
+    "startingPrice": 5499,
     "image": "/images/collections/timberline.jpg"
   },
   {
     "slug": "harmony-series",
     "name": "Harmony Series",
     "description": "Dual Infrared + Steam",
-    "startingPrice": 5499,
+    "startingPrice": 5999,
     "image": "/images/collections/harmony.jpg"
   },
   {
     "slug": "lodge-series",
     "name": "Lodge Series",
     "description": "Cabin & Outdoor",
-    "startingPrice": 4999,
+    "startingPrice": 5999,
     "image": "/images/collections/lodge.jpg"
   }
 ]

@@ -152,7 +152,7 @@ export default function GuideContent() {
                         ["Warm-Up Time", "10-20 minutes", "30-45 minutes", "15-30 minutes"],
                         ["Energy Use", "1.3-2.7 kW", "3-9 kW", "Combined system"],
                         ["Space Needed", "Small — fits a closet", "Medium to large", "Medium to large"],
-                        ["Price Range", "From $2,499", "From $3,499", "From $5,499"],
+                        ["Price Range", "From $2,799", "From $3,999", "From $5,999"],
                         ["Best For", "Daily gentle therapy", "Authentic intense heat", "Maximum flexibility"],
                       ].map(([feature, infrared, steam, dual], i) => (
                         <tr key={feature} className={i % 2 === 0 ? "bg-white" : "bg-cream"}>

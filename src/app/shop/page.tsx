@@ -5,7 +5,7 @@ import ShopContent from "./ShopContent";
 export const metadata: Metadata = {
   title: "Shop All Saunas",
   description:
-    "Browse our full collection of infrared, steam, barrel, and outdoor saunas. Free shipping across North America. Starting from $2,499 CAD.",
+    "Browse our full collection of infrared, steam, barrel, and outdoor saunas. Free shipping across North America. Starting from $2,799 CAD.",
 };
 
 export default function ShopPage() {

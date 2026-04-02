@@ -3,32 +3,32 @@
     "slug": "everwood-solace-2",
     "name": "Everwood Solace 2",
     "collection": "Solace Series",
-    "price": 3299,
-    "compareAtPrice": 4199,
+    "price": 3499,
+    "compareAtPrice": 4499,
     "image": "/images/products/solace-2.jpg"
   },
   {
     "slug": "everwood-timberline-4",
     "name": "Everwood Timberline 4",
     "collection": "Timberline Series",
-    "price": 5999,
-    "compareAtPrice": 7799,
+    "price": 6499,
+    "compareAtPrice": 8499,
     "image": "/images/products/timberline-4.jpg"
   },
   {
     "slug": "everwood-harmony-3",
     "name": "Everwood Harmony 3",
     "collection": "Harmony Series",
-    "price": 5499,
-    "compareAtPrice": 6999,
+    "price": 5999,
+    "compareAtPrice": 7499,
     "image": "/images/products/harmony-3.jpg"
   },
   {
     "slug": "everwood-lodge-grand",
     "name": "Everwood Lodge Grand",
     "collection": "Lodge Series",
-    "price": 8499,
-    "compareAtPrice": 10999,
+    "price": 9499,
+    "compareAtPrice": 11999,
     "image": "/images/products/lodge-grand.jpg"
   }
 ]

@@ -35,7 +35,7 @@ const comparisonRows = [
   { feature: "Electrical Requirement", infrared: "Standard 120V outlet (most models)", steam: "Dedicated 240V circuit" },
   { feature: "Minimum Footprint", infrared: "3\u2032 \u00D7 3\u2032 (closet\u2011sized)", steam: "4\u2032 \u00D7 4\u2032 or larger" },
   { feature: "Maintenance", infrared: "Low \u2014 wipe down after use", steam: "Moderate \u2014 stones, seals, wood treatment" },
-  { feature: "Starting Price", infrared: "From $2,499", steam: "From $3,499" },
+  { feature: "Starting Price", infrared: "From $2,799", steam: "From $3,999" },
   { feature: "Best For", infrared: "Daily therapy, chronic pain, gentle detox", steam: "Authentic ritual, respiratory health, intense sweat" },
 ];
 
@@ -229,14 +229,14 @@ export default function InfraredVsSteamPage() {
           <SectionHeading>Upfront Cost Comparison</SectionHeading>
           <p className="mb-4 leading-loose">
             Quality infrared saunas start at around{" "}
-            <strong>$2,499</strong> for a well-built one- to two-person cabin
+            <strong>$2,799</strong> for a well-built one- to two-person cabin
             with low-EMF carbon heaters and premium Canadian cedar construction.
             Because most plug into a standard outlet, installation costs are
             typically zero beyond delivery.
           </p>
           <p className="leading-loose">
             Traditional steam saunas start at roughly{" "}
-            <strong>$3,499</strong> for a comparable footprint, with prices
+            <strong>$3,999</strong> for a comparable footprint, with prices
             climbing for larger rooms or barrel-style outdoor builds. Factor in an
             additional <strong>$300&ndash;$800</strong> for a licensed electrician
             to install the 240&thinsp;V circuit, and potentially more if you need
