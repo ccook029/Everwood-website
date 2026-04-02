@@ -32,14 +32,14 @@ const values = [
     color: "bg-charcoal",
     title: "Built to Last",
     description:
-      "2-year warranty backed by saunas built with decades of manufacturing expertise.",
+      "1-year warranty backed by saunas built with decades of manufacturing expertise.",
   },
 ];
 
 const stats = [
   { value: "1,000+", label: "Saunas Delivered" },
   { value: "4.8", label: "Average Rating", star: true },
-  { value: "2-Year", label: "Warranty" },
+  { value: "1-Year", label: "Warranty" },
   { value: "Free", label: "Shipping Always" },
 ];
 

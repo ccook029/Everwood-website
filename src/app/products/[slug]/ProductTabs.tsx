@@ -137,10 +137,10 @@ export default function ProductTabs({ product }: ProductTabsProps) {
         {activeTab === 4 && (
           <div className="space-y-4 text-sm text-charcoal/80 leading-relaxed">
             <p>
-              Every Everwood sauna is backed by our <strong className="text-charcoal">2-Year Limited Warranty</strong>, covering defects in materials and workmanship under normal residential use.
+              Every Everwood sauna is backed by our <strong className="text-charcoal">1-Year Limited Warranty</strong>, covering defects in materials and workmanship under normal residential use.
             </p>
             <p>
-              <strong className="text-charcoal">What is covered:</strong> Structural components, heater elements, electrical controls, stove components, and wood panels. If any covered component fails due to a manufacturing defect within 24 months of your purchase date, we will repair or replace it at no cost to you.
+              <strong className="text-charcoal">What is covered:</strong> Structural components, heater elements, electrical controls, stove components, and wood panels. If any covered component fails due to a manufacturing defect within 12 months of your purchase date, we will repair or replace it at no cost to you.
             </p>
             <p>
               <strong className="text-charcoal">What is not covered:</strong> Normal wear and tear, cosmetic changes to natural wood (including patina development on outdoor models), damage caused by improper installation or use, and modifications made to the original product.

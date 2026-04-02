@@ -50,7 +50,7 @@ const faqSchema = {
       name: "What does the warranty cover?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our 2-year limited warranty covers manufacturing defects in structural components, heater elements, control panels, and electrical components under normal residential use.",
+        text: "Our 1-year limited warranty covers manufacturing defects in structural components, heater elements, control panels, and electrical components under normal residential use.",
       },
     },
     {
@@ -58,7 +58,7 @@ const faqSchema = {
       name: "What is your return policy?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We offer a 30-day satisfaction guarantee. Unassembled and unused saunas can be returned for a full refund minus return shipping costs. Assembled saunas are subject to a 15% restocking fee.",
+        text: "Unassembled and unused saunas can be returned for a full refund minus return shipping costs. Assembled saunas are subject to a 15% restocking fee. Contact us to initiate a return.",
       },
     },
     {

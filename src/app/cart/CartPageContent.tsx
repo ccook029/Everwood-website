@@ -202,7 +202,7 @@ export default function CartPageContent() {
                 </div>
                 <div className="text-center">
                   <Shield className="w-5 h-5 mx-auto text-forest mb-1" />
-                  <p className="text-xs text-charcoal/60">2-Year Warranty</p>
+                  <p className="text-xs text-charcoal/60">1-Year Warranty</p>
                 </div>
               </div>
 

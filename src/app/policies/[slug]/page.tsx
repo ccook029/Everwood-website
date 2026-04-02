@@ -66,25 +66,25 @@ const policies: PolicyPage[] = [
     title: "Return & Refund Policy",
     slug: "returns",
     metaDescription:
-      "30-day satisfaction guarantee on all Everwood saunas. Learn about our return process and refund timeline.",
+      "Learn about our return process and refund timeline for Everwood saunas.",
     content: [
       {
-        heading: "30-Day Satisfaction Guarantee",
+        heading: "Return Policy",
         body: [
-          "We want you to love your Everwood sauna. If for any reason you are not completely satisfied, you may return your sauna within 30 days of the delivery date.",
+          "We want you to love your Everwood sauna. If for any reason you are not satisfied, you may contact us to arrange a return.",
         ],
       },
       {
         heading: "Unassembled & Unused Saunas",
         body: [
-          "Saunas that have not been assembled or used may be returned for a full refund minus return shipping costs. The product must be in its original packaging and in resalable condition. Contact us within 30 days of delivery to initiate the return process. We will arrange carrier pickup.",
+          "Saunas that have not been assembled or used may be returned for a full refund minus return shipping costs. The product must be in its original packaging and in resalable condition. Contact us to initiate the return process. We will arrange carrier pickup.",
         ],
       },
       {
         heading: "Assembled Saunas",
         body: [
-          "Saunas that have been assembled are subject to a 15% restocking fee. The sauna must be disassembled, carefully repacked in its original packaging, and in a condition suitable for resale. Contact us within 30 days of delivery to discuss your return.",
-          "We understand that you may want to test your sauna before committing. If you assemble the unit and discover a defect or issue, that is covered under our warranty — not our return policy. Contact us and we will resolve the issue at no cost.",
+          "Saunas that have been assembled are subject to a 15% restocking fee. The sauna must be disassembled, carefully repacked in its original packaging, and in a condition suitable for resale. Contact us to discuss your return.",
+          "If you assemble the unit and discover a defect or issue, that is covered under our warranty — not our return policy. Contact us and we will resolve the issue at no cost.",
         ],
       },
       {
@@ -97,7 +97,7 @@ const policies: PolicyPage[] = [
       {
         heading: "Defective Products",
         body: [
-          "Products with manufacturing defects are covered under our 2-year warranty. If you discover a defect, contact our support team with your order number and photos of the issue. We will resolve it promptly — see our warranty policy for full details.",
+          "Products with manufacturing defects are covered under our 1-year warranty. If you discover a defect, contact our support team with your order number and photos of the issue. We will resolve it promptly — see our warranty policy for full details.",
         ],
       },
       {
@@ -119,12 +119,12 @@ const policies: PolicyPage[] = [
     title: "Warranty",
     slug: "warranty",
     metaDescription:
-      "2-year limited warranty on all Everwood saunas. Coverage details, claim process, and what to expect.",
+      "1-year limited warranty on all Everwood saunas. Coverage details, claim process, and what to expect.",
     content: [
       {
-        heading: "2-Year Limited Warranty",
+        heading: "1-Year Limited Warranty",
         body: [
-          "Every Everwood sauna is backed by a comprehensive 2-year limited warranty, effective from the date of delivery. This warranty covers defects in materials and workmanship under normal residential use.",
+          "Every Everwood sauna is backed by a comprehensive 1-year limited warranty, effective from the date of delivery. This warranty covers defects in materials and workmanship under normal residential use.",
         ],
       },
       {
@@ -133,7 +133,7 @@ const policies: PolicyPage[] = [
           "Structural components: frame, wall panels, bench slats, door and hinges, floor panels.",
           "Heating elements: infrared heater panels, carbon panels, electric stove components, temperature sensors and controls.",
           "Electrical components: control panels, wiring harnesses, LED lighting, digital displays.",
-          "If any covered component fails due to a manufacturing defect within 24 months of your delivery date, we will repair or replace it at no cost to you, including the cost of shipping replacement parts.",
+          "If any covered component fails due to a manufacturing defect within 12 months of your delivery date, we will repair or replace it at no cost to you, including the cost of shipping replacement parts.",
         ],
       },
       {

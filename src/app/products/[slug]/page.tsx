@@ -175,12 +175,12 @@ export default function ProductPage({ params }: Props) {
                   <p className="text-xs text-charcoal/50 mt-0.5">North America</p>
                 </div>
                 <div className="rounded-lg border border-stone/50 py-3 px-2">
-                  <p className="text-xs font-semibold text-charcoal">2-Year Warranty</p>
+                  <p className="text-xs font-semibold text-charcoal">1-Year Warranty</p>
                   <p className="text-xs text-charcoal/50 mt-0.5">Full coverage</p>
                 </div>
                 <div className="rounded-lg border border-stone/50 py-3 px-2">
-                  <p className="text-xs font-semibold text-charcoal">30-Day Guarantee</p>
-                  <p className="text-xs text-charcoal/50 mt-0.5">Easy returns</p>
+                  <p className="text-xs font-semibold text-charcoal">Easy Returns</p>
+                  <p className="text-xs text-charcoal/50 mt-0.5">Hassle-free</p>
                 </div>
               </div>
             </div>

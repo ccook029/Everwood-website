@@ -3,7 +3,7 @@ import FadeInUp from "../ui/FadeInUp";
 
 const props = [
   { icon: Truck, label: "Free North American Shipping" },
-  { icon: Shield, label: "2-Year Warranty" },
+  { icon: Shield, label: "1-Year Warranty" },
   { icon: Wrench, label: "Easy Assembly" },
   { icon: TreePine, label: "Premium Materials" },
 ];
