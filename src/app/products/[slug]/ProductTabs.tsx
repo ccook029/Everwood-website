@@ -122,7 +122,10 @@ export default function ProductTabs({ product }: ProductTabsProps) {
               <strong className="text-charcoal">Free shipping</strong> is included on all orders across Canada and the continental United States. No hidden fees, no minimum order requirements.
             </p>
             <p>
-              Smaller indoor models ship via standard freight and typically arrive within 2-3 weeks of your order date. Larger models, barrel saunas, and outdoor cabins ship via LTL freight with a delivery window of 3-4 weeks. You will receive tracking information and a delivery appointment window once your order ships.
+              <strong className="text-charcoal">Crafted to order:</strong> Every Everwood sauna is built to order to ensure premium quality. Allow 6-8 weeks from your order date for production, quality inspection, and delivery. Select models may be available in stock for faster shipping — check availability on the product page.
+            </p>
+            <p>
+              You will receive a confirmation email with your estimated delivery timeline, and tracking information as soon as your sauna ships.
             </p>
             <p>
               All saunas include detailed assembly instructions with step-by-step diagrams. Most indoor infrared models can be assembled by two adults in 30-60 minutes using basic household tools. Barrel saunas and outdoor cabins may require 2-4 hours and an extra set of hands.

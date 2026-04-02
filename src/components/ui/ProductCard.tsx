@@ -59,7 +59,15 @@ export default function ProductCard({ product }: ProductCardProps) {
         <h3 className="font-heading text-base font-semibold text-charcoal group-hover:text-cedar transition-colors">
           {product.name}
         </h3>
-        <p className="mt-1 text-sm text-charcoal/60">{product.capacity}</p>
+        <div className="mt-1 flex items-center gap-2">
+          <span className="text-sm text-charcoal/60">{product.capacity}</span>
+          {product.isFeatured && (
+            <span className="inline-flex items-center gap-1 text-xs text-ember font-medium">
+              <span className="w-1 h-1 rounded-full bg-ember animate-pulse" />
+              Low Stock
+            </span>
+          )}
+        </div>
         <div className="mt-2 flex items-center gap-2">
           <span className="text-lg font-bold text-charcoal">
             {formatPrice(product.price)}

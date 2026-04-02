@@ -144,9 +144,29 @@ export default function ProductPage({ params }: Props) {
                 {product.shortDescription}
               </p>
 
-              <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-stone/30 px-3 py-1 text-sm text-charcoal/70">
-                {product.capacity}
+              <div className="mt-4 flex flex-wrap items-center gap-2">
+                <span className="inline-flex items-center gap-2 rounded-full bg-stone/30 px-3 py-1 text-sm text-charcoal/70">
+                  {product.capacity}
+                </span>
+                {product.isFeatured ? (
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-ember/10 px-3 py-1 text-sm font-medium text-ember">
+                    <span className="w-1.5 h-1.5 rounded-full bg-ember animate-pulse" />
+                    Low Stock — Order Soon
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-forest/10 px-3 py-1 text-sm text-forest">
+                    <span className="w-1.5 h-1.5 rounded-full bg-forest" />
+                    Crafted to Order
+                  </span>
+                )}
               </div>
+
+              {/* Delivery estimate */}
+              <p className="mt-3 text-sm text-charcoal/50">
+                {product.isFeatured
+                  ? "Limited units in stock. Ships within 1-2 weeks."
+                  : "Estimated delivery: 6-8 weeks from order date."}
+              </p>
 
               {/* Electrical Requirements Callout */}
               <div className="mt-6 rounded-lg bg-amber-50 border border-amber-200 p-4 flex items-start gap-3">

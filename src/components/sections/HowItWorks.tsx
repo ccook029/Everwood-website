@@ -9,9 +9,9 @@ const steps = [
   },
   {
     number: "02",
-    heading: "We Ship It Free",
+    heading: "Crafted & Shipped Free",
     description:
-      "Free delivery anywhere in Canada or the continental US.",
+      "Your sauna is crafted to order and shipped free anywhere in Canada or the continental US.",
   },
   {
     number: "03",

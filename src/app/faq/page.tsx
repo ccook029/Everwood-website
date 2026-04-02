@@ -18,7 +18,7 @@ const faqSchema = {
       name: "How long does shipping take?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most orders ship within 3-5 business days. Smaller infrared models arrive in 2-3 weeks via standard freight. Larger steam, barrel, and cabin saunas ship via LTL freight and typically arrive in 3-4 weeks.",
+        text: "Every Everwood sauna is crafted to order. Once your order is confirmed, allow 6-8 weeks for production and delivery. You will receive tracking information once your sauna ships. Select models may be available for faster delivery when in stock.",
       },
     },
     {

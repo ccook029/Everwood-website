@@ -45,10 +45,10 @@ export async function POST(req: NextRequest) {
         shipping_rate_data: {
           type: "fixed_amount",
           fixed_amount: { amount: 0, currency: "cad" },
-          display_name: "Free Shipping",
+          display_name: "Free Shipping — Crafted to Order",
           delivery_estimate: {
-            minimum: { unit: "business_day", value: 14 },
-            maximum: { unit: "business_day", value: 28 },
+            minimum: { unit: "business_day", value: 30 },
+            maximum: { unit: "business_day", value: 40 },
           },
         },
       },

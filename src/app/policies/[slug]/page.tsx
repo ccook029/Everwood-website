@@ -25,11 +25,11 @@ const policies: PolicyPage[] = [
         ],
       },
       {
-        heading: "Delivery Timelines",
+        heading: "Crafted to Order",
         body: [
-          "Standard infrared models (1-3 person): Ship via standard freight within 3-5 business days of your order. Estimated delivery: 2-3 weeks from order date.",
-          "Large steam saunas, barrel saunas, and cabin saunas: Ship via LTL (Less Than Truckload) freight within 5-7 business days. Estimated delivery: 3-4 weeks from order date.",
-          "Delivery times are estimates and may vary based on your location and carrier capacity. You will receive tracking information via email once your order ships.",
+          "Every Everwood sauna is crafted to order, ensuring each unit meets our quality standards before it leaves the workshop. Once your order is confirmed, allow 6-8 weeks for production, quality inspection, and delivery.",
+          "Select popular models may be available in stock for faster delivery. Check the product page for current availability. In-stock items typically ship within 5-7 business days.",
+          "You will receive a confirmation email with estimated delivery dates when your order is placed, and tracking information as soon as your sauna ships.",
         ],
       },
       {
@@ -158,7 +158,7 @@ const policies: PolicyPage[] = [
       {
         heading: "Resolution Timeline",
         body: [
-          "Most warranty claims are resolved within 5-7 business days. Replacement parts are shipped via expedited freight at no cost. If a full unit replacement is required, delivery follows the same timelines as new orders (2-4 weeks depending on model and location).",
+          "Most warranty claims are resolved within 5-7 business days. Replacement parts are shipped via expedited freight at no cost. If a full unit replacement is required, delivery follows the same timelines as new orders (6-8 weeks).",
         ],
       },
       {
