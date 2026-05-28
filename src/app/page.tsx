@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "../components/sections/Hero";
+import ShowroomCta from "../components/sections/ShowroomCta";
 import ValueProps from "../components/sections/ValueProps";
 import ShopByCollection from "../components/sections/ShopByCollection";
 import FeaturedProducts from "../components/sections/FeaturedProducts";
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <ShowroomCta />
       <ValueProps />
       <ShopByCollection />
       <FeaturedProducts />
