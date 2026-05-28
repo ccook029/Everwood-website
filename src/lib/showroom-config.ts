@@ -36,6 +36,15 @@ export interface ShowroomProductBase {
   rotationY?: number;
   /** Aspect ratio (width / height) of the source image; default 0.8 (4:5) */
   aspect?: number;
+  /** Cabin dimensions in metres (W × H × D). Defaults to Solace 2-ish proportions. */
+  dimensions3d?: { w: number; h: number; d: number };
+  /**
+   * Optional UV crop applied to the front-face texture so the sauna fills the
+   * cabin face instead of including floor/ceiling around it.
+   * Format: [offsetX, offsetY, repeatX, repeatY] — all 0..1.
+   * three.js UV origin is bottom-left; offsetY is measured from the bottom.
+   */
+  frontCrop?: [number, number, number, number];
 }
 
 export interface ShowroomPanelProduct extends ShowroomProductBase {
@@ -83,6 +92,12 @@ export const showroomProducts: ShowroomProduct[] = [
     mode: "panel",
     image: "/showroom/everwood-solace-2/main.jpg",
     aspect: 4 / 5,
+    // Real cabin: 47" W × 75" H × 41" D ≈ 1.2 × 1.9 × 1.05 m
+    dimensions3d: { w: 1.2, h: 1.9, d: 1.05 },
+    // Crop tuned to the supplied photo (828×898): isolate the cabinet,
+    // dropping the floor + surrounding wall so the photo edges land on the
+    // cedar side faces. offsetY is from the bottom of the image.
+    frontCrop: [0.2, 0.03, 0.6, 0.91],
   },
   {
     slug: "everwood-solace-3",

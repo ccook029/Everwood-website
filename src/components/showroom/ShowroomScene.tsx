@@ -49,22 +49,32 @@ function buildStations(): Station[] {
     const angle = (i / n) * Math.PI * 2;
     const x = Math.sin(angle) * r;
     const z = Math.cos(angle) * r;
-    // Cameras are slightly inside the ring, looking outward at each panel
-    const cx = Math.sin(angle) * (r - 3);
-    const cz = Math.cos(angle) * (r - 3);
+    // Cameras sit inside the ring, looking outward at each cabin
+    const cx = Math.sin(angle) * (r - 3.5);
+    const cz = Math.cos(angle) * (r - 3.5);
     return {
       product: p,
       position: [x, 0, z],
       rotationY: angle + Math.PI, // face inward toward centre
-      camera: [cx, 1.8, cz],
-      lookAt: [x, 1.6, z],
+      camera: [cx, 1.6, cz],
+      lookAt: [x, 1.05, z], // cabin mid-height
     };
   });
 }
 
 export default function ShowroomScene() {
   const stations = useMemo(buildStations, []);
-  const [activeStation, setActiveStation] = useState(0);
+  // Start on the first station that actually has a photo so the loaded
+  // texture is visible on initial render instead of a placeholder.
+  const firstWithImage = useMemo(() => {
+    const idx = stations.findIndex(
+      (s) =>
+        (s.product.mode === "panel" && !!s.product.image) ||
+        s.product.mode === "spin",
+    );
+    return idx === -1 ? 0 : idx;
+  }, [stations]);
+  const [activeStation, setActiveStation] = useState(firstWithImage);
   const sceneRef = useRef<HTMLDivElement>(null);
 
   // Drive station index from page scroll
@@ -105,7 +115,7 @@ export default function ShowroomScene() {
         <Canvas
           shadows
           dpr={[1, showroomScene.maxDpr]}
-          camera={{ position: [0, 1.8, 0.001], fov: 55, near: 0.1, far: 60 }}
+          camera={{ position: stations[firstWithImage].camera, fov: 55, near: 0.1, far: 60 }}
           gl={{ antialias: true, powerPreference: "high-performance" }}
           style={{ background: showroomScene.background }}
         >
@@ -315,15 +325,27 @@ function CameraRig({
   activeStation: number;
 }) {
   const { camera } = useThree();
-  const target = useRef(new Vector3(0, 1.6, 0));
-  const desiredCam = useRef(new Vector3(0, 1.8, 0.001));
+  const initial = stations[activeStation] ?? stations[0];
+  const target = useRef(new Vector3(...initial.lookAt));
+  const desiredCam = useRef(new Vector3(...initial.camera));
   const orbitRef = useRef<OrbitControlsImpl | null>(null);
+  const snappedRef = useRef(false);
 
   useFrame(() => {
     const s = stations[activeStation];
     if (!s) return;
     desiredCam.current.set(...s.camera);
     target.current.set(...s.lookAt);
+    if (!snappedRef.current) {
+      // Snap on the first frame so users see the first station immediately
+      camera.position.copy(desiredCam.current);
+      if (orbitRef.current) {
+        orbitRef.current.target.copy(target.current);
+        orbitRef.current.update();
+      }
+      snappedRef.current = true;
+      return;
+    }
     camera.position.lerp(desiredCam.current, 0.04);
     if (orbitRef.current) {
       orbitRef.current.target.lerp(target.current, 0.06);
